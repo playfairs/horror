@@ -3,10 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A grunge all-in-one bot, enhancing communities with user-focused commands.">
+    <meta name="description" content="Welcome to Horror - Your all-in-one bot for community engagement.">
     <meta name="theme-color" content="transparent">
-    <title>Horror - Bot Interface</title>
+    <title>Horror - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Playfair, Playfair-Serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dedede;
+        }
+
+        header {
+            background: #1c1c1c;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #333;
+            color: #fff;
+        }
+
+        .hero-title {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2em;
+        }
+
+        .features-section,
+        .similar-bots {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item {
+            margin-bottom: 15px;
+        }
+
+        .bot-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bot-list li {
+            margin: 5px 0;
+        }
+
+        .bot-list a {
+            text-decoration: none;
+            color: #ff0000;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ff0000;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,6 +109,8 @@
                 <h1 class="site-title">Horror</h1>
             </div>
             <ul class="nav-links">
+                <li><a href="/about">About</a></li>
+                <li><a href="/features">Features</a></li>
                 <li><a href="/commands">Commands</a></li>
                 <li><a href="/legal">Legal</a></li>
                 <li><a href="/premium">Premium</a></li>
@@ -32,24 +125,43 @@
     <!-- Hero Section -->
     <section class="hero">
         <img src="https://i1.sndcdn.com/artworks-10XsTmRWT0okJjtV-H7BS3w-t1080x1080.jpg" alt="Horror" class="hero-logo">
-        <h1 class="hero-title">Horror</h1>
-        <p class="hero-description">A horrorific all-in-one bot, enhancing communities with user-focused commands.</p>
+        <h1 class="hero-title">Welcome to Horror</h1>
+        <p class="hero-description">Your all-in-one bot designed to enhance your community with unique features and user-friendly commands.</p>
+        <a href="/commands" class="btn-primary">{/} Commands</a>
     </section>
 
-    <!-- Commands Section -->
-    <section class="commands-section">
-        <div class="command-list">
-            <button class="command-btn">All <span class="count">0</span></button>
-            <button class="command-btn">Information <span class="count">0</span></button>
-            <button class="command-btn">Moderation <span class="count">0</span></button>
-            <button class="command-btn">Servers <span class="count">0</span></button>
-            <button class="command-btn">Fun <span class="count">0</span></button>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2 class="section-title">Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Community Engagement</h3>
+                <p>Enhance user interaction with fun and engaging commands.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Moderation Tools</h3>
+                <p>Keep your server safe with robust moderation features.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Customization</h3>
+                <p>Customize your bot experience to fit your community's needs.</p>
+            </div>
         </div>
+    </section>
+
+    <!-- Similar Bots Section -->
+    <section class="similar-bots">
+        <h2 class="section-title">Similar Bots</h2>
+        <ul class="bot-list">
+            <li><a href="https://greed.best">Greed</a></li>
+            <li><a href="https://bleed.bot">Bleed</a></li>
+            <li><a href="https://rival.rocks">Rival</a></li>
+        </ul>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Horror. All Rights Reserved.</p>
+        <p>&copy; HORROR (DISCORD) BOT. All Rights Reserved.</p>
     </footer>
 
 </body>
